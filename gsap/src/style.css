@@ -82,7 +82,7 @@ section{
 
 .hero-cards{
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
@@ -100,7 +100,12 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
+
+
+
+
 
 .card-title{
     width: 100%;
@@ -116,17 +121,20 @@ section{
     background-color: var(--accent-1);
     transform-origin: top right;
     z-index: 2;
+   
 }
 
 .hero-cards .card#hero-card-2{
     background-color: var(--accent-2);
     z-index: 1;
+  
 }
 
 .hero-cards .card#hero-card-3{
     background-color: var(--accent-3);
     transform-origin: top left;
     z-index: 0;
+   
 }
 
 .services{
