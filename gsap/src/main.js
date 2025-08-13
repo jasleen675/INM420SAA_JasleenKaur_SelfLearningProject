@@ -229,17 +229,21 @@ ScrollTrigger.create({
 });
 
 // name with logo animation
-gsap.from(".name-image", {
-  opacity: 0,
-  y: 30,
-  duration: 1.5,
-  ease: "power3.out",
-  scrollTrigger: {
-    trigger: ".name-image",
-    start: "top 90%",  
-    toggleActions: "play reverse play reverse",
-  },
-});
+gsap.fromTo(".name-image",
+  { opacity: 0, y: 30 },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1.5,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: ".name-image",
+      start: "top 90%",
+      toggleActions: "play reverse play reverse",
+    },
+  }
+);
+
 
 // intro para animation
 gsap.from(".hero-info-text", {
