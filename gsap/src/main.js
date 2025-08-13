@@ -272,19 +272,44 @@ gsap.from(".timeline-event", {
 });
 
 // outro section animation
-gsap.fromTo("#outro-section", 
-  { opacity: 0, y: 50 }, 
-  {
-    opacity: 1,
-    y: 0,
-    duration: 1.2,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: "#outro-section",
-      start: "top 80%",  
-      end: "bottom 20%",  
-      toggleActions: "play reverse play reverse",
-
-    }
+const outroTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#outro-section",
+    start: "top 80%",
+    toggleActions: "play reverse play reverse",
+   
   }
+});
+
+outroTimeline.from("#outro-section", {
+  opacity: 0,
+  y: 60,
+  duration: 1,
+  ease: "power3.out",
+});
+
+outroTimeline.from(
+  [
+    ".outro-content",
+    "#outro-section .form-group",
+    "#outro-section .btn-submit",
+    ".portfolio-links"
+  ],
+  {
+    opacity: 0,
+    y: 30,
+    duration: 0.8,
+    ease: "power3.out",
+    stagger: 0.25,
+  },
+  "-=0.6" 
 );
+
+outroTimeline.to("#outro-section .btn-submit", {
+  scale: 1.05,
+  boxShadow: "0 0 15px 3px rgba(255, 182, 193, 0.7)", // soft pink glow
+  duration: 1.2,
+  ease: "power1.inOut",
+  repeat: -1,
+  yoyo: true,
+}, "-=0.4"); 

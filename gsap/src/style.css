@@ -187,7 +187,7 @@ section{
   position: absolute;
   bottom: 3rem;       
   left: 0.5rem;        
-  width: 37%;       
+  width: 30%;       
   color: var(--dark); 
   font-size: 3rem;
   font-weight: 500;
@@ -198,7 +198,7 @@ section{
 }
 
 .hero-info-text p {
-  font-size: 1.5rem; 
+  font-size: 1.2rem; 
 }
 
 /* About Section */
