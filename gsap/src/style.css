@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 :root {
-    --dark: #000;
-    --light: #fffaf5;
-    --light2: #f0ece5;
-    --accent-1: #e5d9f6;
-    --accent-2: #ffd2f3;
-    --accent-3: #fcdca6;
+    --dark: #fffaf5;
+    --light: #000;
+    --light2: #726356;
+    --accent-1: #ecb936;
+    --accent-2: #372e29;
+    --accent-3: #f0c65d;
 }
 
 *{
@@ -255,8 +255,8 @@ section{
 }
 
 .event-icon {
-    background-color: var(--light);
-    border: 4px solid var(--light);
+    background-color: var(--dark);
+    border: 4px solid var(--light2);
     border-radius: 50%;
     width: 130px;
     height: 130px;
@@ -320,6 +320,10 @@ section{
     text-align: center;
     transform: translateY(400%);
     will-change: transform;
+}
+
+.services-header h1{
+    color: var(--dark);
 }
 
 .cards{
@@ -513,7 +517,7 @@ section{
   font-family: "DM Mono", monospace;
   font-weight: 400;
   font-size: 0.85rem;
-  color: var(--accent-3);
+  color: var(--light);
   margin-bottom: 0.3rem;
   letter-spacing: 0.05em;
 }
