@@ -227,3 +227,64 @@ ScrollTrigger.create({
         });
     },
 });
+
+// name with logo animation
+gsap.from(".name-image", {
+  opacity: 0,
+  y: 30,
+  duration: 1.5,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".name-image",
+    start: "top 90%",  
+    toggleActions: "play reverse play reverse",
+  },
+});
+
+// intro para animation
+gsap.from(".hero-info-text", {
+  opacity: 0,
+  x: -40,
+  duration: 1.5,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: ".hero-info-text",
+    start: "top 90%",
+    toggleActions: "play reverse play reverse",
+  },
+});
+
+// about section animation
+
+gsap.from(".timeline-event", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3,
+    ease: "power2.out",
+    scrollTrigger: {
+        trigger: ".timeline-horizontal",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play reverse play reverse", 
+        
+    }
+});
+
+// outro section animation
+gsap.fromTo("#outro-section", 
+  { opacity: 0, y: 50 }, 
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1.2,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger: "#outro-section",
+      start: "top 80%",  
+      end: "bottom 20%",  
+      toggleActions: "play reverse play reverse",
+
+    }
+  }
+);
