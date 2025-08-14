@@ -15,7 +15,6 @@
 }
 
 
-
 body{
     overflow-x: hidden;
     font-family: "DM Sans";
@@ -36,6 +35,8 @@ span{
     font-weight: 500;
 }
 
+/* NAVBAR */
+
 nav{
     position: fixed;
     width: 100vw;
@@ -50,7 +51,7 @@ nav{
   width: 50px;  
   height: auto;
   display: block;
-}
+}   
 
 .menu-btn span{
     font-size: 0.8rem;
@@ -95,6 +96,7 @@ section{
 
 }
 
+/* HERO SECTION */
 .hero-name {
     width: 100%;
     text-align: center;
@@ -201,7 +203,7 @@ section{
   font-size: 1.2rem; 
 }
 
-/* About Section */
+/* ABOUT SECTION */
 
 .about {
     background-color: var(--dark);
@@ -220,7 +222,6 @@ section{
     text-transform: uppercase;
 }
 
-/* Horizontal timeline container */
 .timeline-horizontal {
     display: flex;
     justify-content: space-between;
@@ -231,11 +232,11 @@ section{
     padding: 2rem 0;
 }
 
-/* Horizontal line */
+
 .timeline-horizontal::before {
     content: "";
     position: absolute;
-    top: 90px; /* aligns with icons */
+    top: 90px; 
     left: 0;
     width: 100%;
     height: 4px;
@@ -243,7 +244,7 @@ section{
     z-index: 0;
 }
 
-/* Event styles */
+
 .timeline-event {
     text-align: center;
     width: 30%;
@@ -281,7 +282,6 @@ section{
     line-height: 1.4;
 }
 
-/* Responsive: stack vertically */
 @media (max-width: 768px) {
     .timeline-horizontal {
         flex-direction: column;
@@ -308,7 +308,7 @@ section{
 
 
 
-/* services section */
+/* SERVICES SECTION */
 
 .services{
     padding: 5rem 2rem;
@@ -595,7 +595,6 @@ section{
   text-decoration: underline;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .outro {
     padding: 3rem 1rem 4rem 1rem;
