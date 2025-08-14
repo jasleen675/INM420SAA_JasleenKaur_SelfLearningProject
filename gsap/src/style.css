@@ -282,31 +282,6 @@ section{
     line-height: 1.4;
 }
 
-@media (max-width: 768px) {
-    .timeline-horizontal {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .timeline-horizontal::before {
-        top: 0;
-        left: 40px;
-        width: 4px;
-        height: 100%;
-    }
-
-    .timeline-event {
-        width: 100%;
-        text-align: left;
-        margin-bottom: 2rem;
-    }
-
-    .event-icon {
-        margin: 0 1rem 0 0;
-    }
-}
-
-
 
 /* SERVICES SECTION */
 
@@ -595,18 +570,3 @@ section{
   text-decoration: underline;
 }
 
-@media (max-width: 480px) {
-  .outro {
-    padding: 3rem 1rem 4rem 1rem;
-    max-width: 95vw;
-  }
-
-  .outro h1 {
-    font-size: 2rem;
-  }
-
-  .outro p,
-  .portfolio-links {
-    font-size: 1rem;
-  }
-}
